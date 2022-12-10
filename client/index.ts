@@ -6,6 +6,6 @@ canvasEl.width = window.innerWidth;
 canvasEl.height = window.innerHeight;
 const ctx = canvasEl.getContext('2d');
 
-socket.on('connection', (args) => {
-  console.log(args);
+socket.on('connect', () => {
+  console.log('Connected!');
 });
